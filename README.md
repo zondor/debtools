@@ -40,9 +40,11 @@ Options:
 - `-f`  force compress on generic branch names (development, test, master)
 - `-p`  force push to remote using "+branchname"
 
+**Warning:** This will disable history, allign with master to fix pull requests
+
 ###buildenv
 Changes {build number} for a {branch} on site environmnet {env}
 
-**Warning** Before using script, change line 21 - swap dummy string with https link to enriched github repository
+**Warning:** Before using script, change line 21 - swap dummy string with https link to enriched github repository
 
 Syntax: `$ buildenv {env} {branch} {build number}`
