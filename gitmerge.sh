@@ -39,7 +39,16 @@ elif [[ $1 && "$OPTP" = true && $2 ]]; then
 fi
 echo -e "Merging ${CHIGHLIGHT}${currentBranch}${CNORMAL} with ${CHIGHLIGHT}${mergeBranch}${CNORMAL}"
 
-git checkout $mergeBranch
+CHECKOUT=$((git checkout $mergeBranch) 2>&1)
+if [[ "${CHECKOUT}" =~ "error: pathspec" ]]; then
+    echo -e "No such branch ${mergeBranch}. Creating..."
+    git checkout -b $mergeBranch origin/$mergeBranch
+    CURRENT=$((git rev-parse --abbrev-ref HEAD) 2>&1)
+    if [[ "${CURRENT}" != "${mergeBranch}" ]]; then
+        echo -e "Error: could not switch to ${mergeBranch}. ABORTING"
+        exit 1
+    fi
+fi
 git pull origin $mergeBranch
 git merge --no-ff $currentBranch
 git push origin $mergeBranch

@@ -37,7 +37,7 @@ do
             TXTCHECKOUT=$((git checkout $branch) 2>&1);
             if [[ "${TXTCHECKOUT}" =~ 'did not match any file' ]]; then
                 echo "Creating new branch $branch";
-                TXTCHECKOUT=$((git checkout -b $branch) 2>&1);
+                TXTCHECKOUT=$((git checkout -b $branch origin/$branch) 2>&1);
             fi
           else
             lcommit=`git log -n 1 --pretty=format:"%H, %cn : %s"`;
