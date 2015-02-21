@@ -6,7 +6,6 @@ STARTDIR=${PWD}
 INSTDIR=~/.bashscripts
 SYMLINKDIR=/usr/local/bin
 cd $INSTDIR
-git checkout origin master
 git pull origin master
 SCRIPTS=(gcobranch gitmerge guorigin buildenv gitpress)
 for SCRIPT in ${SCRIPTS[@]}

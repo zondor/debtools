@@ -9,7 +9,7 @@ Install for the first time:
 `git clone https://github.com/Gundars/bashscripts.git ~/.bashscripts && bash ~/.bashscripts/install.sh`
 
 Update existing scripts: 
-`bash ~/.bashscripts/install.sh`
+`updatebashscripts`
 
 ###gcobranch
 Git checkout branch - checks out and pulls specified git {branch} in all git repos found in each of specified directories {dir}
