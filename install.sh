@@ -6,6 +6,7 @@ STARTDIR=${PWD}
 INSTDIR=~/.bashscripts
 SYMLINKDIR=/usr/local/bin
 cd $INSTDIR
+git checkout origin master
 git pull origin master
 SCRIPTS=(gcobranch gitmerge guorigin buildenv gitpress)
 for SCRIPT in ${SCRIPTS[@]}
@@ -24,4 +25,7 @@ do
 		fi
 	fi
 done
+if [ ! -f ${SYMLINKDIR}/updatebashscripts ]; then
+	sudo ln -s $INSTDIR/install.sh ${SYMLINKDIR}/updatebashscripts
+fi
 cd $STARTDIR
