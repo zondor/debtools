@@ -63,7 +63,7 @@ cp $ZDEBTOOLS/zsh/conf/.zshrc ~/   -vv
 
 
 show_head "Install Gundras bash git tools"
-git clone https://github.com/Gundars/bashscripts.git ~/.bashscripts && bash ~/.bashscripts/install.sh
+git clone https://github.com/zondor/bashscripts.git ~/.bashscripts && bash ~/.bashscripts/install.sh
 show_succes "== done"
 
 show_head "All Finished"
