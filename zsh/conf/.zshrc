@@ -41,7 +41,6 @@ alias cmp="composer"
 # Laravel
 alias art="php ./artisan"
 alias update-debtools="cd ~/.zo-debtools && gl origin master && bash ./inst/setup.sh"
-alias gitmerge="bash ~/.bashscripts/gitmerge.sh"
 
 alias phpcs="/usr/bin/phpcs -np --standard=FusionCS --extensions=php "
 alias phpcs-fx="php ~/bin/phpcbf.phar -n --standard=~FusionCS --extensions=php "
@@ -55,6 +54,8 @@ alias cmp-test="COMPOSER=test-composer.json composer update --prefer-source -vvv
 alias cmp-dev="COMPOSER=development-composer.json composer update --prefer-source -vvv"
 alias cmp-master="composer update --prefer-source -vvv"
 
+alias glo="git pull origin"
+alias gpo="git push origin"
 alias glm="git pull origin master"
 alias glt="git pull origin test"
 alias gld="git pull origin development"
