@@ -38,14 +38,14 @@ show_color() {
 show_head "Install extra packets"
 sudo apt-get install htop curl wget git -y 
 
-show_head "Install powerline fonts"
-if [ -d ~/.powerline-fonts ]; then
-	show_succes "Already installed"
-else
-	git clone https://github.com/powerline/fonts.git ~/.powerline-fonts && bash ~/.powerline-fonts/./install.sh
-	
-	
-fi
+#show_head "Install powerline fonts"
+#if [ -d ~/.powerline-fonts ]; then
+#	show_succes "Already installed"
+#else
+#	git clone https://github.com/powerline/fonts.git ~/.powerline-fonts && bash ~/.powerline-fonts/./install.sh
+#fi
+
+
 show_succes "== done"
 
 show_head "Install zsh"
