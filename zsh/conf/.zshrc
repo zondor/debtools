@@ -1,6 +1,6 @@
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="agn"
+ZSH_THEME="fino"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
