@@ -66,3 +66,9 @@ alias gitpull-theirs="git pull -s recursive -X theirs"
 alias cls="clear"
 alias art="./artisan"
 alias fix-github="rm -rf /tmp/git@github.com:22 && ssh git@github.com"
+
+#disabele git prom check
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}
