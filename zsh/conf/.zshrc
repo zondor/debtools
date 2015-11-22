@@ -18,6 +18,9 @@ source $ZSH/oh-my-zsh.sh
   
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+locale-gen en_US.UTF-8
 
 export EDITOR='vim'
 
@@ -70,8 +73,3 @@ alias cls="clear"
 alias art="./artisan"
 alias fix-github="rm -rf /tmp/git@github.com:22 && ssh git@github.com"
 
-#disabele git prom check
-function git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
-}
