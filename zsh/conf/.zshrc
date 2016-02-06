@@ -48,8 +48,8 @@ alias cmp="composer"
 alias art="php ./artisan"
 alias update-debtools="cd ~/.zo-debtools && gl origin master && bash ./inst/setup.sh"
 
-alias phpcs="/usr/bin/phpcs -np --standard=FusionCS --extensions=php "
-alias phpcs-fx="php ~/bin/phpcbf.phar -n --standard=~FusionCS --extensions=php "
+alias phpcs="/usr/bin/phpcs -np --standard=PSR2 --extensions=php "
+alias phpcs-fx="php ~/bin/phpcbf.phar -n --standard=PSR2 --extensions=php "
 
 alias terror="tail -f ~/sites/log/fusion_global_error.log"
 
