@@ -53,7 +53,6 @@ alias gpo="git push origin"
 alias glm="git pull origin master"
 alias gl="git pull origin "
 alias gfa="git fetch --all"
-alias gitall='function _blah(){ wd fusion;echo "### Checking out $1 to all"; gitco $1 ./docs/wp-content/plugins/; gitco $1 ./vendor/fusion; gitco $1 ./docs/wp-content/themes/ };_blah'
 alias gitpull-theirs="git pull -s recursive -X theirs"
 
 alias cls="clear"
