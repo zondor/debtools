@@ -46,7 +46,6 @@ alias update-debtools="cd ~/.zo-debtools && gl origin master && bash ./inst/setu
 alias phpcs="/usr/bin/phpcs -np --standard=PSR2 --extensions=php "
 alias phpcs-fx="php ~/bin/phpcbf.phar -n --standard=PSR2 --extensions=php "
 alias hcomposer="hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=300 -v Http.SlowQueryThreshold=300000 /usr/bin/composer update --prefer-source -vvvv"
-alias phpunit-coverage="phpunit --color --coverage-text"
 
 alias glo="git pull origin"
 alias gpo="git push origin"
