@@ -1,7 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="fino"
-# steeef avit clean frisk
+ZSH_THEME="steeef"
+# steeef avit clean frisk fino
 #
 # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
