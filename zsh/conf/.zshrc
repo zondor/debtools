@@ -39,8 +39,13 @@ alias ll=""ls -laLH""
 
 alias mysql="mysql -u root -proot"
 alias cmp="composer"
-
+alias cmp-dump="composer dump -o"
+alias cmp-update="composer update -vvv -o --profile"
+alias cmp-update="composer install -vvv -o --profile"
+alias cept="php ./vendor/bin/codecept"
+alias sf="php bin/console"
 alias art="php ./artisan"
+
 alias update-debtools="cd ~/.zo-debtools && gl origin master && bash ./inst/setup.sh"
 
 alias phpcs="/usr/bin/phpcs -np --standard=PSR2 --extensions=php "
