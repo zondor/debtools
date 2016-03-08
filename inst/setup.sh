@@ -59,7 +59,7 @@ show_succes "== done"
 
 show_head "Copy some configs"
 cp $ZDEBTOOLS/zsh/themes/agn.zsh-theme ~/.oh-my-zsh/themes/ -vv
-#cp $ZDEBTOOLS/zsh/conf/.zshrc ~/   -vv
+cp $ZDEBTOOLS/zsh/conf/.zshrc ~/   -vv
 
 
 show_head "Install Gundras bash git tools"
