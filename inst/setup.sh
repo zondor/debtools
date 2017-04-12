@@ -61,7 +61,8 @@ show_head "Copy some configs"
 cp $ZDEBTOOLS/zsh/themes/agn.zsh-theme ~/.oh-my-zsh/themes/ -vv
 cp $ZDEBTOOLS/zsh/conf/.zshrc ~/   -vv
 
-
+sudo apt-get update
+sudo apt-get install git vim top htop -y
 show_head "Install Gundras bash git tools"
 rm -rf ~/.bashscripts
 git clone https://github.com/Gundars/bashscripts.git ~/.bashscripts && bash ~/.bashscripts/install.sh
